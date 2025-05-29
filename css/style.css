@@ -1,0 +1,294 @@
+:root {
+    --h-font-size: 28px;
+    --font-size: 14px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+body {
+    font-family: "Poetsen One", sans-serif;
+    font-family: "Kiwi Maru", serif;
+    background-color: #f2e8cb;
+}
+
+header {
+    background-color: #edbfbf;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .div0 {
+    display: flex;
+    justify-content: space-around;
+    gap: 25rem;
+}
+
+header .div0 h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header .div0 nav {
+    display: flex;
+    align-items: center;
+}
+
+header .div0 nav ul {
+    display: flex;
+    gap: 3rem;
+    transition: all 0.3s linear;
+}
+
+#drawerButton {
+    display: none;
+}
+
+.active {
+    font-size: 3rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    /* transition: all 0.5s linear; */
+}
+
+.sec00 {
+    background: url(../images/hanatemizu1.jpg);
+    background-size: cover;
+    background-position: 55% center;
+    height: 420px;
+    /* margin-top: 4rem; */
+}
+
+main {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: var(--font-size);
+}
+
+.div00 {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+main .div00 h2 {
+    font-size: var(--h-font-size);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+main .div00 .sec01 {
+    margin-top: 4rem;
+    position: relative;
+}
+
+main .div00 .sec01 .p000 {
+    /* border: 1px solid #333; */
+    padding: 1rem 0;
+    line-height: 2rem;
+}
+
+main .div00 .sec01 img {
+    width: 80px;
+    height: 80px;
+}
+
+main .div00 .sec02 {
+    margin-top: 4rem;
+}
+
+main .div00 .sec02 ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+main .div00 .sec02 ul li img {
+    height: 185px;
+    width: 330px;
+}
+
+main .div00 .sec03 {
+    margin-top: 4rem;
+}
+
+main .div00 .sec03 ul li {
+    border-bottom: 1px solid #333333;
+    padding: 16px;
+    display: flex;
+}
+
+main .div00 .sec03 ul li time {
+    padding-right: 32px;
+}
+
+main .div00 .sec03 ul .li07 {
+    border-top: 1px solid #333333;
+    padding-top: 16px;
+}
+
+main .div00 .sec04 {
+    margin-top: 4rem;
+}
+
+main .div00 .sec04 h2 {
+    margin-bottom: 8px;
+}
+
+main .div00 .sec04 .p00 {
+    margin-bottom: 2rem;
+}
+
+main .div00 .sec04 p {
+    padding: 10px;
+}
+main .div00 .sec04 .p0 input {
+    border: 1px solid #333;
+    opacity: 0.8;
+    padding: 3px;
+}
+
+main .div00 .sec04 .p01 input {
+    height: 1rem;
+    width: 1rem;
+}
+
+main .div00 .sec04 .p02 input {
+    border: 1px solid #333;
+    padding: 3px;
+}
+
+main .div00 .sec04 .p04 textarea {
+    border: 1px solid #333;
+    padding: 1rem;
+    text-align: left;
+}
+
+main .div00 .sec04 .p05 button {
+    border: 3px solid #edbfbf;
+    border-radius: 16px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 40px;
+}
+
+input {
+    appearance: auto;
+}
+
+footer {
+    height: 4rem;
+    background-color: #b4d9e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+    #drawerButton {
+        display: block;
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+        z-index: 10000;
+        /* background-image: url(../images/drawermenu.png);
+        background-size: cover;
+        padding: 0;
+        width: calc(72px + 8px + 8px);
+        height: calc(72px + 8px + 8px);
+        background-color: white; */
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        gap: 24px;
+    }
+
+    .bar {
+        height: 4px;
+        width: 100%;
+        background-color: #fff;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        margin-bottom: 5px;
+    }
+
+    #drawerButton.reDesign .bar {
+        background-color: #c05191;
+    }
+
+    #drawerButton.reDesign .bar1 {
+        transform: rotate(45deg);
+        position: relative;
+        top: 9px;
+    }
+
+    #drawerButton.reDesign .bar2 {
+        opacity: 0;
+    }
+
+    #drawerButton.reDesign .bar3 {
+        transform: rotate(-45deg);
+        position: relative;
+        bottom: 9px;
+    }
+
+    header ul {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: -100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        opacity: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        z-index: 1000;
+    }
+
+    header ul.open {
+        top: 0;
+    }
+
+    /* ________________________________________________________________________ */
+
+    header .div0 h1 {
+        font-size: 21px;
+        margin-left: 32px;
+    }
+
+    main .div00 h2 {
+        font-size: 24px;
+    }
+
+    main .div00 .sec02 ul {
+        display: flex;
+        flex-basis: 0px;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    main .div00 .sec03 ul li {
+        margin: 0 32px;
+    }
+
+    form {
+        margin: 0 32px;
+    }
+}

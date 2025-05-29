@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>my portfolio</title>
+        <link rel="stylesheet" href="css/destyle.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display&display=swap=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="div0">
+                <h1>My portfolio</h1>
+                <nav>
+                    <ul>
+                        <li><a href="http://127.0.0.1:5501/index.html#About">About</a></li>
+                        <li><a href="http://127.0.0.1:5501/index.html#Works">Works</a></li>
+                        <li><a href="http://127.0.0.1:5501/index.html#Blog">Blog</a></li>
+                        <li><a href="http://127.0.0.1:5501/index.html#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="drawerButton" class="menu-toggle">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </button>
+            </div>
+        </header>
+        <section class="sec00"></section>
+
+        <main>
+            <div class="div00">
+                <section class="sec01">
+                    <h2 id="About">About</h2>
+                    <p class="p0000">わたしについて</p>
+                    <p class="p000">
+                        2019年に父に入学祝いとしてカメラLumix GF10を買ってもらう。<br />お花・人物・風景を撮ることが好きで独学で勉強を。<br />
+                        2023年、社会人1年目で心に余裕が出てきた頃、 <br />より深くカメラの知識を身につけたい、<br />
+                        カメラ仲間が欲しいということでカメラサークルに入会。<br />
+                        現在もカメラの勉強をしながら活動に参加している。
+                    </p>
+                    <img src="images/blue.png" alt="あおはな" />
+                    <img src="images/green.png" alt="緑" />
+                    <img src="images/orange.png" alt="オレンジ" />
+                    <img src="images/pink.png" alt="ピンク" />
+                    <img src="images/skyblue.png" alt="水色" />
+                    <img src="images/yellowgreen.png" alt="黄緑" />
+                </section>
+
+                <section class="sec02">
+                    <h2 id="Works">Works</h2>
+                    <ul>
+                        <li class="li01"><img src="images/cherryblossom1.jpg" alt="桜" /></li>
+                        <li class="li02"><img src="images/rose1.jpg" alt="ばら" /></li>
+                        <li class="li03"><img src="images/hydrangia1.jpg" alt="紫陽花" /></li>
+                        <li class="li04"><img src="images/sarusuberi1.jpg" alt="百日紅" /></li>
+                        <li class="li05"><img src="images/cosmos1.jpg" alt="コスモス" /></li>
+                        <li class="li06"><img src="images/ichou1.jpg" alt="銀杏" /></li>
+                    </ul>
+                </section>
+
+                <section class="sec03">
+                    <h2 id="Blog">Blog</h2>
+                    <ul>
+                        <li class="li07">
+                            <time datetime="2024-11-25">2024.11.25</time>西宮を散歩していると銀杏並木を発見。
+                        </li>
+                        <li>
+                            <time datetime="2024-11-06">2024.11.06</time>万博記念公園の秋桜が見頃の時期を迎えました。
+                        </li>
+                        <li><time datetime="2024-08-29">2024.08.29</time>自宅の百日紅が今年も咲きました。</li>
+                        <li><time datetime="2024-06-05">2024.06.05</time>三室戸寺の紫陽花が咲き始めました。</li>
+                        <li><time datetime="2024-05-24">2024.05.24</time>姫路バラ園の薔薇が見頃です。</li>
+                        <li><time datetime="2024-04-02">2024.04.02</time>須磨離宮公園の桜開花しました。</li>
+                    </ul>
+                </section>
+
+                <section class="sec04">
+                    <h2 id="Contact">Contact</h2>
+                    <p class="p00">お問い合わせ</p>
+                    <form action="" method="">
+                        <p class="p0">
+                            名前<br /><br />
+                            <input type="text" name="name" placeholder="山田　はな子" />
+                        </p>
+                        <p class="p01">
+                            性別<br /><br />
+
+                            <label><input type="radio" name="gender" value="男性" class="radio" /> 男性</label>
+                            <label><input type="radio" name="gender" value="女性" class="radio" />女性</label>
+                        </p>
+                        <p class="p02">
+                            メールアドレス<br /><br />
+                            <input type="email" name="email" placeholder="flower@love.com" />
+                        </p>
+                        <p class="p03">
+                            お花を見に行きたい季節<br /><br />
+                            <label><input type="checkbox" name="season" value="春" /> 春</label>
+                            <label><input type="checkbox" name="season" value="夏" /> 夏</label>
+                            <label><input type="checkbox" name="season" value="秋" /> 秋</label>
+                            <label><input type="checkbox" name="season" value="冬" /> 冬</label>
+                        </p>
+                        <p class="p04">
+                            メッセージ<br /><br />
+                            <textarea name="message" placeholder="メッセージがあれば入力してください"></textarea>
+                        </p>
+                        <p class="p05"><button type="submit">Send</button></p>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p><small>&copy;2025 Nakagaki</small></p>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
