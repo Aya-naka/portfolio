@@ -219,6 +219,13 @@ footer {
         gap: 24px;
     }
 
+    main .div00 .sec04 .p04 textarea {
+        border: 1px solid #333;
+        padding: 1rem;
+        text-align: left;
+        width: 100%;
+    }
+
     .bar {
         height: 4px;
         width: 100%;
