@@ -129,10 +129,10 @@ main .div00 .sec01 .pi5 {
 }
 main .div00 .sec01 .pi6 {
     position: absolute;
-    left: 25%;
+    left: 30%;
     top: 80%;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 }
 
 main .div00 .sec02 {
@@ -289,8 +289,8 @@ footer {
         position: absolute;
         right: 5%;
         top: 100px;
-        width: 60px;
-        height: 60px;
+        width: 45px;
+        height: 45px;
     }
     main .div00 .sec01 .pi6 {
         position: absolute;
@@ -301,7 +301,7 @@ footer {
     }
 
     main .div00 .sec03 ul {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     main .div00 .sec04 .p04 textarea {
