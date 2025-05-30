@@ -304,6 +304,10 @@ footer {
         font-size: 10px;
     }
 
+    main .div00 .sec03 ul li time {
+        padding-right: 20px;
+    }
+
     main .div00 .sec04 .p04 textarea {
         border: 1px solid #333;
         padding: 1rem;
